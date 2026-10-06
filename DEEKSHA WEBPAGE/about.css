@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #ffffff;
+
+    color: #17131d;
+
+    line-height: 1.6;
+}
+
+
+/* header */
+
+.about-header {
+    width: 100%;
+
+    padding: 25px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.logo {
+    text-decoration: none;
+
+    color: #17131d;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.back-btn {
+    text-decoration: none;
+
+    color: #17131d;
+
+    border: 1px solid #d8d1df;
+
+    padding: 9px 20px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.back-btn:hover {
+    background: #17131d;
+
+    color: white;
+}
+
+
+/* common text */
+
+.small-title {
+    color: #8052b8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+/* intro */
+
+.about-intro {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 100px 7% 90px;
+
+    text-align: center;
+}
+
+
+.about-intro h1 {
+    font-size: clamp(42px, 6vw, 75px);
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+
+.about-intro h1 span {
+    display: block;
+
+    color: #8052b8;
+}
+
+
+.intro-text {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #66606d;
+
+    font-size: 17px;
+}
+
+
+/* how it works */
+
+.works-section {
+    padding: 90px 7%;
+
+    background: #f8f6fa;
+
+    text-align: center;
+}
+
+
+.works-section h2,
+.why-section h2,
+.info-section h2 {
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 50px;
+}
+
+
+.steps {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+
+.step-card {
+    background: white;
+
+    padding: 30px;
+
+    min-height: 280px;
+
+    border: 1px solid #e8e2ec;
+
+    border-radius: 18px;
+
+    transition: 0.3s;
+}
+
+
+.step-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b59ad0;
+
+    box-shadow:
+        0 15px 35px
+        rgba(80, 45, 100, 0.08);
+}
+
+
+.step-number {
+    color: #8052b8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+
+.step-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 14px;
+}
+
+
+.step-card p {
+    color: #706a76;
+
+    font-size: 14px;
+}
+
+
+/* why */
+
+.why-section {
+    padding: 110px 7%;
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+.why-content {
+    max-width: 850px;
+}
+
+
+.why-section h2 {
+    max-width: 700px;
+
+    margin-bottom: 30px;
+}
+
+
+.why-section p {
+    color: #625d67;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+
+    max-width: 800px;
+}
+
+
+/* information */
+
+.info-section {
+    padding: 90px 7%;
+
+    background: #17131d;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.info-section .small-title {
+    color: #b995dc;
+}
+
+
+.info-section h2 {
+    margin-bottom: 25px;
+}
+
+
+.info-section p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #c8c2cd;
+
+    font-size: 16px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #17131d;
+
+    border-top: 1px solid #352f3b;
+
+    color: #aaa2b0;
+
+    font-size: 13px;
+}
+
+
+/* mobile */
+
+@media (max-width: 850px) {
+
+    .steps {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .about-header {
+        padding: 20px 5%;
+    }
+
+    .about-intro {
+        padding: 75px 6%;
+    }
+
+    .about-intro h1 {
+        letter-spacing: -1px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+    .works-section,
+    .why-section {
+        padding: 70px 6%;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .step-card {
+        min-height: auto;
+    }
+
+}

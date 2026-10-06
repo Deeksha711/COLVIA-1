@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLVIA</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- hero -->
+
+<section class="colvia-hero">
+
+    <div class="colvia-glow"></div>
+
+    <div class="colvia-particles"></div>
+
+    <div class="colvia-visual">
+        <img
+            src="images/hero.jpeg"
+            alt="COLVIA 3D visual"
+        >
+    </div>
+
+    <div class="colvia-beam"></div>
+
+    <div class="colvia-title">
+        COLVIA
+    </div>
+
+</section>
+
+
+    <!-- Navigation -->
+    <nav class="navigation">
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="college.html">College</a>
+            <a href="compare.html">Compare</a>
+        </div>
+
+        <div class="hamburger-menu" id="hamburgerMenu">
+
+            <a href="preferences.html">Selected Preferences</a>
+            <a href="about.html">About COLVIA</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="help.html">Help & Feedback</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Profile -->
+    <section class="profile-section">
+
+        <div class="profile-card">
+
+            <div class="initial-circle" id="initialCircle">
+                AS
+            </div>
+
+            <div class="profile-details">
+                <h2 id="studentName"></h2>
+                <p>COLVIA ID: <span id="colviaId"></span></p>
+            </div>
+
+        </div>
+
+        <button class="preferences-button" id="preferencesButton">
+            Selected Preferences
+        </button>
+
+    </section>
+
+
+    <!-- Recommendations -->
+    <main>
+
+        <div class="recommendation-heading">
+            <p>BASED ON YOUR PROFILE</p>
+            <h1>Recommended Colleges</h1>
+        </div>
+
+        <section class="college-grid" id="collegeGrid"></section>
+
+    </main>
+
+
+    <script src="home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Help & Feedback | COLVIA</title>
+
+    <link rel="stylesheet" href="help.css">
+</head>
+
+<body>
+
+    <main class="help-page">
+
+        <a href="home.html" class="back-link">← Back</a>
+
+        <section class="help-card">
+
+            <p class="page-label">COLVIA</p>
+
+            <h1>Help & Feedback</h1>
+
+            <p class="intro">
+                Have a question or want to share your feedback?
+            </p>
+
+            <div class="help-content">
+
+                <div class="help-section">
+                    <h2>Need help?</h2>
+
+                    <p>
+                        If you are having trouble using COLVIA or finding
+                        something on the website, you can use this section
+                        to let us know.
+                    </p>
+                </div>
+
+                <div class="help-section">
+                    <h2>Feedback</h2>
+
+                    <p>
+                        Your feedback can help us understand what works well
+                        and what can be improved.
+                    </p>
+                </div>
+
+                <div class="feedback-box">
+
+                    <label for="feedback">Your feedback</label>
+
+                    <textarea
+                        id="feedback"
+                        placeholder="Write your feedback here..."
+                    ></textarea>
+
+                    <button type="button" id="submitFeedback">
+                        Submit Feedback
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById("submitFeedback").addEventListener("click", function () {
+            const feedback = document.getElementById("feedback").value.trim();
+
+            if (feedback === "") {
+                alert("Please enter your feedback.");
+                return;
+            }
+
+            alert("Thank you for your feedback.");
+            document.getElementById("feedback").value = "";
+        });
+    </script>
+
+</body>
+</html>

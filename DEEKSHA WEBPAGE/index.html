@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>COLVIA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- hero -->
+
+<section class="colvia-hero">
+
+    <div class="colvia-glow"></div>
+
+    <div class="colvia-particles"></div>
+
+    <div class="colvia-visual">
+        <img
+            src="images/hero.jpeg"
+            alt="COLVIA 3D visual"
+        >
+    </div>
+
+    <div class="colvia-beam"></div>
+
+    <div class="colvia-title">
+        COLVIA
+    </div>
+
+</section>
+
+
+<!-- ABOUT COLVIA  -->
+
+<section class="about">
+
+    <div class="about-content">
+
+        <h2>COLVIA</h2>
+
+        <h3>Your Next Step Starts Here</h3>
+
+        <p>
+            COLVIA brings college and course information together
+            in one place to make exploring your options simpler.
+            Based on your academic background, interests and
+            preferences, COLVIA helps you discover relevant colleges
+            and courses, understand eligibility, compare your options
+            and explore relevant education schemes and services.
+            Instead of going through lengthy information and multiple
+            sources on your own, you can explore options that are
+            more relevant to what you are looking for.
+        </p>
+
+    </div>
+
+
+    <!-- FOUR TABS  -->
+
+    <div class="feature-grid">
+
+        <div class="feature-card card-1">
+
+            <span class="card-number">01</span>
+
+            <div class="icon">
+                ◉
+            </div>
+
+            <h4>Build Your Profile</h4>
+
+            <p>
+                Create a profile using your academic details,
+                interests and preferences.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card card-2">
+
+            <span class="card-number">02</span>
+
+            <div class="icon">
+                ◇
+            </div>
+
+            <h4>Explore Your Options</h4>
+
+            <p>
+                Explore colleges and courses that match
+                the information in your profile.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card card-3">
+
+            <span class="card-number">03</span>
+
+            <div class="icon">
+                ⇄
+            </div>
+
+            <h4>Check &amp; Compare</h4>
+
+            <p>
+                Check eligibility and compare colleges
+                using relevant information.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card card-4">
+
+            <span class="card-number">04</span>
+
+            <div class="icon">
+                ✦
+            </div>
+
+            <h4>Find What Fits You</h4>
+
+            <p>
+                Find and shortlist options according to
+                your preferences.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!--  GET STARTED  -->
+
+    <div class="get-started">
+
+        <p>Ready to begin?</p>
+
+        <button
+            type="button"
+            id="getStartedButton"
+        >
+            Get Started
+        </button>
+
+    </div>
+
+
+    <!-- PRIVACY -->
+
+    <section
+        class="drop-panel"
+        id="privacyPanel"
+    >
+
+        <div class="panel-inner">
+
+            <span class="panel-number">
+                01
+            </span>
+
+            <h3>
+                Privacy &amp; Consent
+            </h3>
+
+            <p class="privacy-text">
+                Before continuing, please review and agree to the Privacy &amp; Consent Terms.
+            </p>
+
+            <div class="privacy-terms">
+
+                <p>
+                    COLVIA uses the information you provide, such as your academic details,
+                    interests and preferences, to help personalize the colleges and courses shown to you.
+                </p>
+
+                <p>
+                    Please do not enter sensitive personal information such as Aadhaar numbers,
+                    passwords for other services, financial information, or other information that is not required for your student profile.
+                </p>
+
+                <p>
+                    The information provided in your profile is intended to support COLVIA's college and course discovery features.
+                </p>
+
+            </div>
+
+
+            <label class="agree-container">
+
+                <input
+                    type="checkbox"
+                    id="agreeCheckbox"
+                >
+
+                <span class="check-box"></span>
+
+                <span>
+                    I Agree
+                </span>
+
+            </label>
+
+
+            <button
+                type="button"
+                id="continueButton"
+                disabled
+            >
+                Continue
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!--  LOGIN  -->
+
+    <section
+        class="drop-panel"
+        id="loginPanel"
+    >
+
+        <div class="panel-inner">
+
+            <span class="panel-number">
+                02
+            </span>
+
+            <h3>
+                Login
+            </h3>
+
+            <p class="login-intro">
+                Login with your COLVIA ID and password to continue.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label>
+                    COLVIA ID
+
+                    <input
+                        type="text"
+                        id="colviaId"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Password
+
+                    <input
+                        type="password"
+                        id="password"
+                        required
+                    >
+                </label>
+
+
+                <button
+                    type="submit"
+                    id="loginContinueButton"
+                    disabled
+                >
+                    Continue
+                </button>
+
+            </form>
+
+
+            <div class="new-user">
+
+                <span>
+                    New here?
+                </span>
+
+                <button
+                    type="button"
+                    id="createProfileButton"
+                >
+                    Create Student Profile
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!---- STUDENT PROFILE  -->
+
+    <section
+        class="drop-panel"
+        id="profilePanel"
+    >
+
+        <div class="panel-inner">
+
+            <span class="panel-number">
+                03
+            </span>
+
+            <h3>
+                Build Your Profile
+            </h3>
+
+
+            <!-- STEP INDICATOR -->
+
+            <div class="profile-steps">
+
+                <div
+                    class="step active"
+                    data-step="1"
+                >
+                    1
+                </div>
+
+                <div class="step-line"></div>
+
+                <div
+                    class="step"
+                    data-step="2"
+                >
+                    2
+                </div>
+
+                <div class="step-line"></div>
+
+                <div
+                    class="step"
+                    data-step="3"
+                >
+                    3
+                </div>
+
+                <div class="step-line"></div>
+
+                <div
+                    class="step"
+                    data-step="4"
+                >
+                    4
+                </div>
+
+            </div>
+
+
+            <form id="profileForm">
+
+
+                <!--  STEP 1  -->
+
+                <div
+                    class="profile-page active"
+                    data-page="1"
+                >
+
+                    <h4>
+                        01 — Basic Information
+                    </h4>
+
+
+                    <label>
+                        Name
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Age
+
+                        <input
+                            type="number"
+                            id="age"
+                            min="1"
+                            max="100"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Gender
+
+                        <select
+                            id="gender"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label>
+                        Preferred Language
+
+                        <select
+                            id="language"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="English">
+                                English
+                            </option>
+
+                            <option value="Hindi">
+                                Hindi
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <div class="profile-buttons">
+
+                        <button
+                            type="button"
+                            class="next-button"
+                            data-next="2"
+                        >
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!--  STEP 2 -->
+
+                <div
+                    class="profile-page"
+                    data-page="2"
+                >
+
+                    <h4>
+                        02 — Academic Information
+                    </h4>
+
+
+                    <label>
+                        Class 10 Percentage
+
+                        <input
+                            type="number"
+                            id="percentage10"
+                            min="0"
+                            max="100"
+                            step="0.01"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Class 12 Percentage
+
+                        <input
+                            type="number"
+                            id="percentage12"
+                            min="0"
+                            max="100"
+                            step="0.01"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Class 12 Stream
+
+                        <select
+                            id="stream"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Science">
+                                Science
+                            </option>
+
+                            <option value="Commerce">
+                                Commerce
+                            </option>
+
+                            <option value="Arts">
+                                Arts
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <!-- SCIENCE COMBINATION -->
+
+                    <div
+                        class="conditional-field"
+                        id="scienceCombinationContainer"
+                    >
+
+                        <label>
+                            Science Combination
+
+                            <select
+                                id="scienceCombination"
+                            >
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option value="PCM">
+                                    PCM
+                                </option>
+
+                                <option value="PCB">
+                                    PCB
+                                </option>
+
+                                <option value="PCMB">
+                                    PCMB
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- OTHER SCIENCE COMBINATION -->
+
+                    <div
+                        class="conditional-field"
+                        id="otherScienceContainer"
+                    >
+
+                        <label>
+                            Enter Science Combination
+
+                            <input
+                                type="text"
+                                id="otherScienceCombination"
+                            >
+                        </label>
+
+                    </div>
+
+
+                    <!-- OTHER STREAM -->
+
+                    <div
+                        class="conditional-field"
+                        id="otherStreamContainer"
+                    >
+
+                        <label>
+                            Enter Your Stream
+
+                            <input
+                                type="text"
+                                id="otherStream"
+                            >
+                        </label>
+
+                    </div>
+
+
+                    <!-- ENTRANCE EXAMS -->
+
+                    <div class="multi-select-field">
+
+                        <span class="field-label">
+                            Entrance Examinations
+                        </span>
+
+                        <div
+                            class="multi-select"
+                            id="entranceMultiSelect"
+                        >
+
+                            <button
+                                type="button"
+                                class="multi-select-button"
+                            >
+
+                                <span id="entranceSelectedText">
+                                    Select examinations
+                                </span>
+
+                                <span>
+                                    ▾
+                                </span>
+
+                            </button>
+
+
+                            <div class="multi-select-options">
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="entranceExam"
+                                        value="JEE"
+                                    >
+                                    JEE
+                                </label>
+
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="entranceExam"
+                                        value="CUET"
+                                    >
+                                    CUET
+                                </label>
+
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="entranceExam"
+                                        value="NEET"
+                                    >
+                                    NEET
+                                </label>
+
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="entranceExam"
+                                        value="Other"
+                                        id="otherEntranceCheckbox"
+                                    >
+                                    Other
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="conditional-field"
+                        id="otherEntranceContainer"
+                    >
+
+                        <label>
+                            Enter Entrance Examination
+
+                            <input
+                                type="text"
+                                id="otherEntrance"
+                            >
+                        </label>
+
+                    </div>
+
+
+                    <div class="profile-buttons">
+
+                        <button
+                            type="button"
+                            class="back-button"
+                            data-back="1"
+                        >
+                            Back
+                        </button>
+
+                        <button
+                            type="button"
+                            class="next-button"
+                            data-next="3"
+                        >
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!--  STEP 3  -->
+
+                <div
+                    class="profile-page"
+                    data-page="3"
+                >
+
+                    <h4>
+                        03 — Interests &amp; Career
+                    </h4>
+
+
+                    <!-- CAREER INTEREST -->
+
+                    <div class="multi-select-field">
+
+                        <span class="field-label">
+                            Career Interests
+                        </span>
+
+                        <div
+                            class="multi-select"
+                            id="careerMultiSelect"
+                        >
+
+                            <button
+                                type="button"
+                                class="multi-select-button"
+                            >
+
+                                <span id="careerSelectedText">
+                                    Select career interests
+                                </span>
+
+                                <span>
+                                    ▾
+                                </span>
+
+                            </button>
+
+
+                            <div class="multi-select-options">
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="Software Development"
+                                    >
+                                    Software Development
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="Data Science"
+                                    >
+                                    Data Science
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="AI / ML"
+                                    >
+                                    AI / ML
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="Design"
+                                    >
+                                    Design
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="Business"
+                                    >
+                                    Business
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="Research"
+                                    >
+                                    Research
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="careerInterest"
+                                        value="None"
+                                        class="none-option"
+                                    >
+                                    None
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COURSE INTEREST -->
+
+                    <div class="multi-select-field">
+
+                        <span class="field-label">
+                            Course Interests
+                        </span>
+
+                        <div
+                            class="multi-select"
+                            id="courseMultiSelect"
+                        >
+
+                            <button
+                                type="button"
+                                class="multi-select-button"
+                            >
+
+                                <span id="courseSelectedText">
+                                    Select course interests
+                                </span>
+
+                                <span>
+                                    ▾
+                                </span>
+
+                            </button>
+
+
+                            <div class="multi-select-options">
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="B.Tech"
+                                        id="btechCheckbox"
+                                    >
+                                    B.Tech
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="BCA"
+                                        id="bcaCheckbox"
+                                    >
+                                    BCA
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="B.Sc"
+                                        id="bscCheckbox"
+                                    >
+                                    B.Sc
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="BBA"
+                                        id="bbaCheckbox"
+                                    >
+                                    BBA
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="B.Com"
+                                        id="bcomCheckbox"
+                                    >
+                                    B.Com
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="Other"
+                                        id="otherCourseCheckbox"
+                                    >
+                                    Other
+                                </label>
+
+                                <label>
+                                    <input
+                                        type="checkbox"
+                                        name="courseInterest"
+                                        value="None"
+                                        class="none-option"
+                                        id="noneCourseCheckbox"
+                                    >
+                                    None
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- OTHER COURSE -->
+
+                    <div
+                        class="conditional-field"
+                        id="otherCourseContainer"
+                    >
+
+                        <label>
+                            Enter Course
+
+                            <input
+                                type="text"
+                                id="otherCourse"
+                            >
+                        </label>
+
+                    </div>
+
+
+                    <!-- == B.TECH BRANCHES == -->
+
+                    <div
+                        class="conditional-field nested-course"
+                        id="btechContainer"
+                    >
+
+                        <div class="multi-select-field">
+
+                            <span class="field-label">
+                                B.Tech Branches / Specializations
+                            </span>
+
+                            <div
+                                class="multi-select"
+                                id="btechMultiSelect"
+                            >
+
+                                <button
+                                    type="button"
+                                    class="multi-select-button"
+                                >
+
+                                    <span id="btechSelectedText">
+                                        Select B.Tech branches
+                                    </span>
+
+                                    <span>
+                                        ▾
+                                    </span>
+
+                                </button>
+
+
+                                <div class="multi-select-options">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="CSE / Computer Science and Engineering"
+                                        >
+                                        CSE / Computer Science and Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="CSE (Artificial Intelligence)"
+                                        >
+                                        CSE (Artificial Intelligence)
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="CSE (Data Science)"
+                                        >
+                                        CSE (Data Science)
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Artificial Intelligence / Machine Learning"
+                                        >
+                                        Artificial Intelligence / Machine Learning
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Data Science"
+                                        >
+                                        Data Science
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Information Technology"
+                                        >
+                                        Information Technology
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Electronics & Communication Engineering"
+                                        >
+                                        Electronics &amp; Communication Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Electrical Engineering"
+                                        >
+                                        Electrical Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Mechanical Engineering"
+                                        >
+                                        Mechanical Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Civil Engineering"
+                                        >
+                                        Civil Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Chemical Engineering"
+                                        >
+                                        Chemical Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Biotechnology"
+                                        >
+                                        Biotechnology
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Aerospace Engineering"
+                                        >
+                                        Aerospace Engineering
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="btechBranch"
+                                            value="Other"
+                                            id="otherBtechBranchCheckbox"
+                                        >
+                                        Other
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="conditional-field"
+                            id="otherBtechBranchContainer"
+                        >
+
+                            <label>
+                                Enter B.Tech Branch
+
+                                <input
+                                    type="text"
+                                    id="otherBtechBranch"
+                                >
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- == BCA SPECIALIZATIONS == -->
+
+                    <div
+                        class="conditional-field nested-course"
+                        id="bcaContainer"
+                    >
+
+                        <div class="multi-select-field">
+
+                            <span class="field-label">
+                                BCA Specializations / Courses
+                            </span>
+
+                            <div
+                                class="multi-select"
+                                id="bcaMultiSelect"
+                            >
+
+                                <button
+                                    type="button"
+                                    class="multi-select-button"
+                                >
+
+                                    <span id="bcaSelectedText">
+                                        Select BCA options
+                                    </span>
+
+                                    <span>
+                                        ▾
+                                    </span>
+
+                                </button>
+
+
+                                <div class="multi-select-options">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="General BCA"
+                                        >
+                                        General BCA
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="BCA Data Science"
+                                        >
+                                        BCA Data Science
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="BCA Artificial Intelligence"
+                                        >
+                                        BCA Artificial Intelligence
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="BCA Cloud Computing"
+                                        >
+                                        BCA Cloud Computing
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="BCA Cyber Security"
+                                        >
+                                        BCA Cyber Security
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcaChoice"
+                                            value="Other"
+                                            id="otherBcaCheckbox"
+                                        >
+                                        Other
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="conditional-field"
+                            id="otherBcaContainer"
+                        >
+
+                            <label>
+                                Enter BCA Specialization / Course
+
+                                <input
+                                    type="text"
+                                    id="otherBca"
+                                >
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- == B.SC COURSES == -->
+
+                    <div
+                        class="conditional-field nested-course"
+                        id="bscContainer"
+                    >
+
+                        <div class="multi-select-field">
+
+                            <span class="field-label">
+                                B.Sc Courses
+                            </span>
+
+                            <div
+                                class="multi-select"
+                                id="bscMultiSelect"
+                            >
+
+                                <button
+                                    type="button"
+                                    class="multi-select-button"
+                                >
+
+                                    <span id="bscSelectedText">
+                                        Select B.Sc options
+                                    </span>
+
+                                    <span>
+                                        ▾
+                                    </span>
+
+                                </button>
+
+
+                                <div class="multi-select-options">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Physics"
+                                        >
+                                        Physics
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Chemistry"
+                                        >
+                                        Chemistry
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Mathematics"
+                                        >
+                                        Mathematics
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Computer Science"
+                                        >
+                                        Computer Science
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Biology"
+                                        >
+                                        Biology
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Biotechnology"
+                                        >
+                                        Biotechnology
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Data Science"
+                                        >
+                                        Data Science
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bscChoice"
+                                            value="Other"
+                                            id="otherBscCheckbox"
+                                        >
+                                        Other
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="conditional-field"
+                            id="otherBscContainer"
+                        >
+
+                            <label>
+                                Enter B.Sc Course
+
+                                <input
+                                    type="text"
+                                    id="otherBsc"
+                                >
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- == BBA COURSES == -->
+
+                    <div
+                        class="conditional-field nested-course"
+                        id="bbaContainer"
+                    >
+
+                        <div class="multi-select-field">
+
+                            <span class="field-label">
+                                BBA Courses / Specializations
+                            </span>
+
+                            <div
+                                class="multi-select"
+                                id="bbaMultiSelect"
+                            >
+
+                                <button
+                                    type="button"
+                                    class="multi-select-button"
+                                >
+
+                                    <span id="bbaSelectedText">
+                                        Select BBA options
+                                    </span>
+
+                                    <span>
+                                        ▾
+                                    </span>
+
+                                </button>
+
+
+                                <div class="multi-select-options">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="General BBA"
+                                        >
+                                        General BBA
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="BBA Finance"
+                                        >
+                                        BBA Finance
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="BBA Marketing"
+                                        >
+                                        BBA Marketing
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="BBA Human Resources"
+                                        >
+                                        BBA Human Resources
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="BBA International Business"
+                                        >
+                                        BBA International Business
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bbaChoice"
+                                            value="Other"
+                                            id="otherBbaCheckbox"
+                                        >
+                                        Other
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="conditional-field"
+                            id="otherBbaContainer"
+                        >
+
+                            <label>
+                                Enter BBA Specialization / Course
+
+                                <input
+                                    type="text"
+                                    id="otherBba"
+                                >
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- == B.COM COURSES == -->
+
+                    <div
+                        class="conditional-field nested-course"
+                        id="bcomContainer"
+                    >
+
+                        <div class="multi-select-field">
+
+                            <span class="field-label">
+                                B.Com Courses / Specializations
+                            </span>
+
+                            <div
+                                class="multi-select"
+                                id="bcomMultiSelect"
+                            >
+
+                                <button
+                                    type="button"
+                                    class="multi-select-button"
+                                >
+
+                                    <span id="bcomSelectedText">
+                                        Select B.Com options
+                                    </span>
+
+                                    <span>
+                                        ▾
+                                    </span>
+
+                                </button>
+
+
+                                <div class="multi-select-options">
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="General B.Com"
+                                        >
+                                        General B.Com
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="B.Com Accounting"
+                                        >
+                                        B.Com Accounting
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="B.Com Finance"
+                                        >
+                                        B.Com Finance
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="B.Com Banking"
+                                        >
+                                        B.Com Banking
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="B.Com Taxation"
+                                        >
+                                        B.Com Taxation
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="bcomChoice"
+                                            value="Other"
+                                            id="otherBcomCheckbox"
+                                        >
+                                        Other
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="conditional-field"
+                            id="otherBcomContainer"
+                        >
+
+                            <label>
+                                Enter B.Com Specialization / Course
+
+                                <input
+                                    type="text"
+                                    id="otherBcom"
+                                >
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-buttons">
+
+                        <button
+                            type="button"
+                            class="back-button"
+                            data-back="2"
+                        >
+                            Back
+                        </button>
+
+                        <button
+                            type="button"
+                            class="next-button"
+                            data-next="4"
+                        >
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- == STEP 4 == -->
+
+                <div
+                    class="profile-page"
+                    data-page="4"
+                >
+
+                    <h4>
+                        04 — Preferences
+                    </h4>
+
+
+                    <!-- STUDY LOCATION -->
+
+                    <div class="preference-group">
+
+                        <span class="field-label">
+                            Preferred Study Location
+                        </span>
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="studyLocation"
+                                value="Anywhere in Lucknow"
+                                required
+                            >
+
+                            Anywhere in Lucknow
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="studyLocation"
+                                value="Near my current location"
+                            >
+
+                            Near my current location
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="studyLocation"
+                                value="Specific area"
+                            >
+
+                            Specific area
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CONDITIONAL LOCATION -->
+
+                    <div
+                        class="conditional-field"
+                        id="currentLocationContainer"
+                    >
+
+                        <label>
+
+                            Your Current Location
+
+                            <input
+                                type="text"
+                                id="currentLocation"
+                            >
+
+                        </label>
+
+                    </div>
+
+
+                    <div
+                        class="conditional-field"
+                        id="specificAreaContainer"
+                    >
+
+                        <label>
+
+                            Preferred Area
+
+                            <input
+                                type="text"
+                                id="specificArea"
+                            >
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- FEE / BUDGET -->
+
+                    <div class="preference-group">
+
+                        <span class="field-label">
+                            Fee / Budget Per Year
+                        </span>
+
+                        <select
+                            id="feeBudget"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Under ₹50,000 per year">
+                                Under ₹50,000 per year
+                            </option>
+
+                            <option value="₹50,000–₹1 lakh per year">
+                                ₹50,000–₹1 lakh per year
+                            </option>
+
+                            <option value="₹1–₹2 lakh per year">
+                                ₹1–₹2 lakh per year
+                            </option>
+
+                            <option value="₹2–₹3 lakh per year">
+                                ₹2–₹3 lakh per year
+                            </option>
+
+                            <option value="Above ₹3 lakh per year">
+                                Above ₹3 lakh per year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PREFERENCE PRIORITY -->
+
+                    <div class="preference-group">
+
+                        <span class="field-label">
+                            Preference Priority
+                        </span>
+
+
+                        <div class="preference-priority">
+
+                            <label>
+                                A — Most Important
+
+                                <select
+                                    id="priorityA"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option value="Location">
+                                        Location
+                                    </option>
+
+                                    <option value="Fee / Budget">
+                                        Fee / Budget
+                                    </option>
+
+                                    <option value="Course">
+                                        Course
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+
+                            <label>
+                                B — Next Priority
+
+                                <select
+                                    id="priorityB"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option value="Location">
+                                        Location
+                                    </option>
+
+                                    <option value="Fee / Budget">
+                                        Fee / Budget
+                                    </option>
+
+                                    <option value="Course">
+                                        Course
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+
+                            <label>
+                                C — Lower Priority
+
+                                <select
+                                    id="priorityC"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select
+                                    </option>
+
+                                    <option value="Location">
+                                        Location
+                                    </option>
+
+                                    <option value="Fee / Budget">
+                                        Fee / Budget
+                                    </option>
+
+                                    <option value="Course">
+                                        Course
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COLLEGE TYPE -->
+
+                    <div class="fixed-field">
+
+                        <span class="field-label">
+                            College Type
+                        </span>
+
+                        <div class="fixed-value">
+                            Private
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-buttons">
+
+                        <button
+                            type="button"
+                            class="back-button"
+                            data-back="3"
+                        >
+                            Back
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="create-button"
+                        >
+                            Create Student Profile
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
